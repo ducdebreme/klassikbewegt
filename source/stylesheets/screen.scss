@@ -1,0 +1,61 @@
+
+
+@import "compass/reset";
+@import "compass/css3/images";
+
+
+@import "variables";
+
+
+// ===== create the page's background =====
+body {
+  @include background( linear-gradient(top, #aaa 0%, #eee 100%));
+  background-repeat: no-repeat;
+  min-height: 100%;
+  padding: 1em;
+}
+
+// this creates white space between the gradient border and the gray background
+.page-outer {
+  border: 2em solid white;
+}
+
+// border with gradient: @see http://stackoverflow.com/questions/2717127/css3-gradient-borders
+.page {
+  @include background( linear-gradient(left, #fff 0%, #fff 50%, $page-border-color 100%));
+  padding: 2px;
+}
+
+.page-inner {
+  background-color: white;
+  padding: 1em;
+}
+
+
+/* from http://blog.teamtreehouse.com/a-better-clearfix-with-sass */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Article list on front page
+.article-list {
+  border: 1px solid orange;
+  &> .cover {
+    width: 50%;
+    float: right;
+  }
+  @extend .clearfix;
+
+  .info {
+    position: relative;
+  }
+  .wrapper {
+    position: absolute;
+    bottom: 0;
+  }
+}
