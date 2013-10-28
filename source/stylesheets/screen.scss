@@ -12,7 +12,7 @@ body {
   @include background( linear-gradient(top, #aaa 0%, #eee 100%));
   background-repeat: no-repeat;
   min-height: 100%;
-  padding: 1em 3em;
+  margin: 1em auto;
   max-width: 1200px;
 }
 
@@ -58,5 +58,8 @@ body {
 
 .art > .cover {
   margin-left: 50%;
+  img {
+    width: 30%;
+  }
 }
 
