@@ -9,8 +9,11 @@
 
 body {
   //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
-  font-family: $serif-font-family;
+  font-family: $sans-font-family;
   @include adjust-font-size-to($base-font-size);
+
+  color: $text-color;
+
 }
 
 // sizes @see http://lamb.cc/typograph/
@@ -45,7 +48,7 @@ h1,h2,h3,h4,h5 {
 }
 
 p {
-  @include padding-trailer(0.5);
+  // @include padding-trailer(0.5);
 }
 
 small, .small {

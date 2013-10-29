@@ -1,0 +1,64 @@
+
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+
+// Article list on front page
+.art { 
+  position: relative; 
+  border-bottom: 0.2em solid $beli-lila-dark;
+  @include margin-trailer(1);
+
+  .highlight {
+    color: $beli-lila-light;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: $serif-font-family;
+    @extend h4;
+  }
+  .date {
+    font-family: $serif-font-family;
+    font-style: italic;
+    @extend h2;
+  }
+  .label {
+    @extend p;
+    font-weight: bold;
+  }
+  .place {
+    font-weight: bold;
+  }
+
+
+  & > .cover {
+    margin-left: 50%;
+    img {
+      width: 66%;
+    }
+    @include padding-trailer(1);
+    display: block;
+  }
+
+  img {
+    // hover effect
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+      @include transition(opacity 0.4s 0 ease);
+    }
+
+    @include single-box-shadow(#aaa, 0.5em, 0.5em);
+  }
+}
+
+
+.art > .title { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  margin-right: 60%;
+  // border: 1px solid orange;
+  @include padding-trailer(1);
+  
+}
+
+
