@@ -49,7 +49,32 @@ title: Klassik bewegt - BINZENER KONZERT REIHE
   </article>
 
 
-  <article class="art">
+  <article class="art" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
+    <!-- search machine meta data -->
+    <div property="v:url" content="http://www.klassikbewegtbinzen.de#2013-06-trio-aquarelle"></div>
+    <div property="v:summary" content="Trio Aquarelle"></div>
+    <div property="v:description" content="Eine musikalische Weltreise durch die Kontinente von Niccolò Paganini bis Astor Piazzolla mit Deug-Yun Kim (Klavier), Katarzyna Bury (Querflöte) und Mārcis Kuplais (Violoncello)"></div>
+    <div property="v:startDate" content="2013-06-15"></div>
+    <span rel="v:location">
+      <span typeof="v:Organization">
+        <span property="v:name" content="Gemeindehalle Binzen"></span>
+        <span rel="v:address">
+          <span typeof="v:Address">
+            <span property="v:street-address" content="Schulstrasse 7"></span>
+            <span property="v:locality" content="Binzen"></span>
+          </span>
+        </span>
+
+        <span rel="v:geo">
+          <span typeof="v:Geo">
+            <span property="v:latitude" content="47.63536999999999" ></span>
+            <span property="v:longitude" content="7.62278" ></span>
+          </span>
+        </span>
+      </span>   
+    </span>
+    <!-- end of search machine meta data -->
+
     <a name="2013-06-trio-aquarelle">
 
       <% link_to 'assets/2013-06-Trio-Aquarelle_Flyer_A5.pdf', :class => 'cover' do %><%= image_tag 'cover/small/2013-06-aquarelle-gross.jpeg' %><% end %> 
