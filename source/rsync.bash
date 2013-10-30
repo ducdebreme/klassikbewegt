@@ -1,0 +1,1 @@
+rsync -zvr /home/stefan/dev/eclipse/klassikbewegt/build/ strato:/var/www/vhosts/klassikbewegtbinzen.de/httpdocs

@@ -12,12 +12,19 @@
   
   <%= stylesheet_link_tag "screen" %>
   <%= javascript_include_tag  "all" %>
+  <meta name="google-site-verification" content="nqPxYCqsKL9yMZkx9lopvJ6QOnWigF6fDbHfMDAR0Qs" />
 </head>
 
 <body class="<%= page_classes %>">
   <div class="page-outer">
     <div class="page">
       <div class="page-inner">
+    <header class="page-header">
+      <object id="logo" data="assets/klassikbewegt-logo.svg" type="image/svg+xml">
+        <%= image_tag 'assets/klassikbewegt-logo.svg', :alt => 'logo' 
+        %>
+      </object>
+    </header>
         <%= yield %>
       </div>
     </div>

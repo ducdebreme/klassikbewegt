@@ -13,18 +13,32 @@ body {
   @include background( linear-gradient(top, #aaa 0%, #e0e0e0 100%));
   background-repeat: no-repeat;
   min-height: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
 
   // scale the grey background margins
   margin: 1em 1.5em $page-margin-bottom;
   @media (min-width: 960px) {
     margin: 1em 2em $page-margin-bottom;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1100px) {
     margin: 1em auto $page-margin-bottom;
   }
 }
 
+/* positioning of logo */
+.page-header {
+  background-color: white;
+  position: relative;
+  width: 60%;
+}
+#logo {
+  // position: absolute;
+  margin-top: -3em;
+  margin-left: -3em;
+}
+.content {
+  margin-top: -6em;
+}
 
 // this creates white space between the gradient border and the gray background
 .page-outer {
