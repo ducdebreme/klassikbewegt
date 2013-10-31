@@ -17,3 +17,4 @@ end
 
 gem "sass"
 gem "compass"
+gem "modular-scale"
