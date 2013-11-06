@@ -2,11 +2,13 @@
 
 @import "compass/reset";
 @import "compass/css3/images";
+@import "compass/typography/links/link-colors";
 
 
 @import "variables";
 @import "type";
 @import "article";
+@import "page_layout";
 
 // ===== create the page's background =====
 body {
@@ -25,37 +27,33 @@ body {
   }
 }
 
-/* positioning of logo */
-.page-header {
-  background-color: white;
-  position: relative;
-  width: 60%;
+.logo {
+  overflow: hidden;
+  display: block;
+  width: 50%;
 }
 #logo {
-  // position: absolute;
-  margin-top: -3em;
-  margin-left: -3em;
+  width: 100%;
 }
-.content {
+
+.img-66 {
+  width: 66%;
+}
+
+/* move content up */
+.move-up {
   margin-top: -6em;
 }
 
-// this creates white space between the gradient border and the gray background
-.page-outer {
-  border: 2em solid white;
+/* place content in the right column */
+.indented-content {
+  margin-left: 50%;
 }
 
-// border with gradient: @see http://stackoverflow.com/questions/2717127/css3-gradient-borders
-.page {
-  @include background( linear-gradient(left, #fff 0%, #fff 50%, $page-border-color 100%));
-  padding: 2px;
+a {
+  @include link-colors($beli-lila-dark, $beli-lila-light, $beli-lila-dark, $beli-lila-dark, $beli-lila-light);
+  text-decoration: none;
 }
-
-.page-inner {
-  background-color: white;
-  padding: 1em;
-}
-
 
 /* from http://blog.teamtreehouse.com/a-better-clearfix-with-sass */
 .clearfix {

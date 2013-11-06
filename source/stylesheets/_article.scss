@@ -40,13 +40,15 @@
 
   img {
     // hover effect
-    opacity: 0.7;
+    opacity: 1.0;
+    @include single-box-shadow(#888, 0.5em, 0.5em);
+
     &:hover {
-      opacity: 1;
-      @include transition(opacity 0.4s 0 ease);
+      opacity: 0.9;
+      @include single-box-shadow(#aaa, 0.5em, 0.5em);
+      @include transition(all 0.2s 0 ease);
     }
 
-    @include single-box-shadow(#aaa, 0.5em, 0.5em);
   }
 }
 

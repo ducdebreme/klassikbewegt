@@ -8,10 +8,10 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
   
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title || "The Middleman" %></title>
+  <title><%= current_page.data.title + " - Klassik bewegt - BINZENER KONZERT REIHE" %></title>
   
   <%= stylesheet_link_tag "screen" %>
-  <%= javascript_include_tag  "all" %>
+
   <meta name="google-site-verification" content="nqPxYCqsKL9yMZkx9lopvJ6QOnWigF6fDbHfMDAR0Qs" />
 </head>
 
@@ -19,15 +19,27 @@
   <div class="page-outer">
     <div class="page">
       <div class="page-inner">
-    <header class="page-header">
-      <object id="logo" data="assets/klassikbewegt-logo.svg" type="image/svg+xml">
-        <%= image_tag 'assets/klassikbewegt-logo.svg', :alt => 'logo' 
-        %>
-      </object>
-    </header>
+        <header class="page-header">
+          <%link_to '/', :class => 'logo' do %>
+            <img id="logo" src="/assets/klassikbewegt-logo.svg" type="image/svg+xml">
+            </img>
+          <% end %>
+        </header>
+
+        <nav class="site-nav">
+          <ul>
+            <li><%= link_to 'Grusswort des Bürgermeisters', 'grusswort.html' %></li>
+            <li><%= link_to 'Impressum', 'impressum.html' %></li>
+          </ul>
+        </nav>
+
         <%= yield %>
+
       </div>
     </div>
   </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <%= javascript_include_tag  "all", "modernizr" %>
 </body>
 </html>

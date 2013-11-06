@@ -1,0 +1,30 @@
+/* positioning of logo */
+.page-header {
+  position: relative;
+  margin-top: -3em;
+  margin-left: -3em;
+}
+
+// this creates white space between the gradient border and the gray background
+.page-outer {
+  border: 2em solid white;
+}
+
+// border with gradient: @see http://stackoverflow.com/questions/2717127/css3-gradient-borders
+.page {
+  @include background( linear-gradient(left, #fff 0%, #fff 50%, $page-border-color 100%));
+  padding: 2px;
+}
+
+.page-inner {
+  background-color: white;
+  padding: 1em 2em 1em 1em;
+}
+
+
+.site-nav {
+  width: 20%;
+  margin-left: 1em;
+  position: absolute;
+  z-index: 10;
+}
