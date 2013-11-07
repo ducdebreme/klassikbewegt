@@ -54,3 +54,7 @@ p {
 small, .small {
   @include adjust-font-size-to(0.75 * $base-font-size); 
 }
+
+em {
+  font-style: italic;
+}
