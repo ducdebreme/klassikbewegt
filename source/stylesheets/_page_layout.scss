@@ -28,6 +28,7 @@ body {
 // this creates white space between the gradient border and the gray background
 .page-outer {
   border: 2em solid white;
+  @include box-shadow(#999 0px 0px 1em);
 }
 
 // border with gradient: @see http://stackoverflow.com/questions/2717127/css3-gradient-borders
