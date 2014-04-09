@@ -6,6 +6,51 @@ title: Home
 
   <article class="art" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
     <!-- search machine meta data -->
+    <div property="v:url" content="http://www.klassikbewegtbinzen.de#2014-05-familienkonzert"></div>
+    <div property="v:summary" content="Familienkonzert - Die Abenteuer des Peer Gynt"></div>
+    <div property="v:description" content="Die Geschichte des Peer Gynt - getanzt und erzählt - mit der berühmten Musik des Norwegers Edvard Grieg"></div>
+    <div property="v:startDate" content="2014-05-18"></div>
+    <span rel="v:location">
+      <span typeof="v:Organization">
+        <span property="v:name" content="ASAG Binzen"></span>
+        <span rel="v:address">
+          <span typeof="v:Address">
+            <span property="v:street-address" content="Meitner Ring 3"></span>
+            <span property="v:locality" content="Binzen"></span>
+          </span>
+        </span>
+
+        <span rel="v:geo">
+          <span typeof="v:Geo">
+            <span property="v:latitude" content="47.62482" ></span>
+            <span property="v:longitude" content="7.61046" ></span>
+          </span>
+        </span>
+      </span>   
+    </span>
+    <!-- end of search machine meta data -->
+
+    <!-- visible data here -->
+    <a name="2014-05-familienkonzert">
+      <% link_to 'assets/2014-05-Familienkonzert_Flyer_A5.pdf', :class => 'cover', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
+        <%= image_tag 'cover/small/2014-05-Peer-Gynt.jpeg', :property => 'v:photo' 
+        %>
+      <% end %> 
+
+      <div class="title">
+        <div class="highlight">&gt; AKTUELL</div>
+        <div class="date">18. Mai 2014</div>
+        <div class="time">11h und 15h</div>
+        <h2 class="label">Familienkonzert</h2>
+        <div class="place">ASAG Binzen, Meitner Ring 3</div>
+      </div>
+
+    </a>
+  </article>
+
+
+  <article class="art" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
+    <!-- search machine meta data -->
     <div property="v:url" content="http://www.klassikbewegtbinzen.de#2013-10-familienkonzert"></div>
     <div property="v:summary" content="Familienkonzert - W.A. Mozart - Wunderkind &amp; Scherzbold"></div>
     <div property="v:description" content="Eine musikalische Familienreise mit spannenden Geschichten und Musik von Wolfgang Amadeus Mozart mit Deug-Yun Kim (Klavier), Katarzyna Bury (Querflöte), Mārcis Kuplais (Violoncello) und Klaus Koska (Sprecher)"></div>
@@ -38,7 +83,6 @@ title: Home
       <% end %> 
 
       <div class="title">
-        <div class="highlight">&gt; AKTUELL</div>
         <div class="date">8. Dezember 2013</div>
         <h2 class="label">Familienkonzert</h2>
         <div class="place">Foyer der Gemeindehalle Binzen</div>

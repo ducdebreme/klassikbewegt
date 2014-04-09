@@ -27,6 +27,9 @@
   .place {
     font-weight: bold;
   }
+  .time {
+    @extend .place;
+  }
 
 
   & > .cover {
