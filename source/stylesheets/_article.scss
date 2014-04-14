@@ -1,6 +1,7 @@
 
 @import "compass/css3/transition";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transform";
 
 // Article list on front page
 .art { 
@@ -29,6 +30,25 @@
   }
   .time {
     @extend .place;
+  }
+
+  .hint { 
+    position: relative;
+    top: 1em;
+    z-index: 100;
+    &>.content {
+      background-color: white;
+      opacity:0.95;
+      padding: 0.25em 0.5em;
+      font-weight: bold;
+      border: 1px solid $beli-lila-dark;
+    }
+    @include transform(rotate(-6deg) translate(-1em));
+    @include transition(transform 0.3s);
+    &:hover {
+      @include transform(rotate(-4deg) translate(-1em));
+      opacity:0.98;
+    }
   }
 
 
