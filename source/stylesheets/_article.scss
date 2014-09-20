@@ -42,8 +42,9 @@
       padding: 0.25em 0.5em;
       font-weight: bold;
       border: 1px solid $beli-lila-dark;
+      font-size: 1.2em;
     }
-    @include transform(rotate(-6deg) translate(-1em));
+    @include transform(rotate(-10deg) translate(-1em));
     @include transition(transform 0.3s);
     &:hover {
       @include transform(rotate(-4deg) translate(-1em));
