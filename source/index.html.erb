@@ -2,7 +2,67 @@
 title: Home
 ---
 
-<section class="content move-up">
+<section class="content move-up" lang="de">
+
+  <article class="art" prefix:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
+    <!-- search machine meta data -->
+    <div property="v:url" content="http://www.klassikbewegtbinzen.de#2015-06-maerchenhaft"></div>
+    <div property="v:name" content="Familienkonzert - Märchenhaft und beschwingt
+- Musik &amp; Märchen"></div>
+    <div property="v:summary" content="Klavier zu vier Händen mit Ok-Hi Lee,
+Rudolf Meister und Deug-Yun Kim"></div>
+    <div property="v:description" content="Wer kennt nicht die Märchen von Dornröschen, vom kleinen Däumling oder von der
+Schönen und dem Biest? Inspiriert von diesen und anderen Geschichten komponier-
+te Maurice Ravel für die Kinder von Freunden die Klaviersuite „Ma mère l'oye“ (zu
+deutsch „Meine Mutter die Gans“). In diesem Familienkonzert können Sie hören, wie
+Maurice Ravel die Stimmung der Märchen in Musik übertragen hat.
+Im zweiten Teil darf man sich freuen auf Franz Schuberts berühmte Militärmärsche.
+Sie wirken auf uns eher wie Tänze, die jedoch bis heute nichts von ihrem mitreißen-
+den Schwung verloren haben. Das Programm endet mit den populären Ungarischen
+Tänzen, die Johannes Brahms für Klavier zu vier Händen bearbeitet hat. Als Vorbild
+wählte er dafür nicht die originale ungarische Volksmusik, sondern die Versionen der
+Melodien wie sie in den Wiener Salons und bei Bällen gespielt wurden.
+Die drei Pianisten werden Auszüge aus den Märchen lesen und die Stücke erläutern."></div>
+    <div property="v:startDate" content="2015-06-21T16:00+02:00"></div>
+
+    <span rel="v:location">
+      <span typeof="v:Organization">
+        <span property="v:name" content="ASAG Binzen"></span>
+        <span rel="v:address">
+          <span typeof="v:Address">
+            <span property="v:street-address" content="Meitner Ring 3"></span>
+            <span property="v:locality" content="Binzen"></span>
+          </span>
+        </span>
+
+        <span rel="v:geo">
+          <span typeof="v:Geo">
+            <span property="v:latitude" content="47.62482" ></span>
+            <span property="v:longitude" content="7.61046" ></span>
+          </span>
+        </span>
+      </span>   
+    </span>
+    <!-- end of search machine meta data -->
+    <!-- visible data here -->
+
+    <div class="cover" id="2015-06-maerchenhaft">
+      <div class="hint"><a class="content" href="http://klassikbewegt.jimdo.com">Jetzt Tickets bestellen</a></div>
+      <% link_to 'assets/2015-05-_Maerchen_Flyer_A5.pdf', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
+        <%= image_tag 'cover/small/2015-05-Maerchenhaft-und-bewegt.jpeg'  %>
+      <% end %> 
+    </div>
+
+    <div class="title">
+      <div class="highlight">&gt; AKTUELL</div>
+      <div class="date">21. Juni 2015</div>
+      <div class="time">16h</div>
+      <h2 class="label">Märchenhaft und beschwingt</h2>
+      <div class="place">ASAG Binzen, Meitner Ring 3</div>
+    </div>
+  </article>
+
+
 
 
   <article class="art" prefix:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
@@ -39,8 +99,7 @@ Deug-Yun Kim (Klavier), Katarzyna Bury
     <div class="cover">
       <!-- <div class="hint"><a class="content" href="http://klassikbewegt.jimdo.com">Jetzt Tickets bestellen</a></div> -->
       <% link_to 'assets/2014-09-Flyer_Gottstein_A3.pdf', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
-        <%= image_tag 'cover/small/2014-09-momente-des-gluecks.jpeg', :property => 'v:photo' 
-        %>
+        <%= image_tag 'cover/small/2014-09-momente-des-gluecks.jpeg'  %>
       <% end %> 
     </div>
 
@@ -86,8 +145,7 @@ Deug-Yun Kim (Klavier), Katarzyna Bury
 
     <div class="cover">
       <% link_to 'assets/2014-05-Familienkonzert_Flyer_A5.pdf', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
-        <%= image_tag 'cover/small/2014-05-Peer-Gynt.jpeg', :property => 'v:photo' 
-        %>
+        <%= image_tag 'cover/small/2014-05-Peer-Gynt.jpeg'  %>
       <% end %> 
     </div>
 
@@ -131,8 +189,7 @@ Deug-Yun Kim (Klavier), Katarzyna Bury
     <!-- visible data here -->
     <a name="2013-10-familienkonzert">
       <% link_to 'assets/2013-10-Familienkonzert_Flyer_A5.pdf', :class => 'cover', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
-        <%= image_tag 'cover/small/2013-10-Mozart_Plakat_screenshot.jpeg', :property => 'v:photo' 
-        %>
+        <%= image_tag 'cover/small/2013-10-Mozart_Plakat_screenshot.jpeg'  %>
       <% end %> 
 
       <div class="title">
