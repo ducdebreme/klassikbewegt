@@ -1,8 +1,69 @@
 ---
 title: Home
 ---
-
 <section class="content move-up" lang="de">
+  <article class="art" prefix:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
+    <!-- search machine meta data -->
+    <div property="v:url" content="http://www.klassikbewegtbinzen.de#2015-10-zauberfloete"></div>
+    <div property="v:name" content="Familienkonzert - Die Zauberflöte von Wolfgang Amadeus Mozart"></div>
+    <div property="v:summary" content="Kammeroper nach Wolfgang Amadeus Mozart"></div>
+    <div property="v:description" content="In den Top 10 der beliebtesten Opern belegt „Die Zauberflöte“ von Wolfgang
+Amadeus Mozart ganz sicher einen Spitzenplatz. Die Geschichte von Papageno und
+Papagena, Tamino und Tamina und natürlich auch von der rachsüchtigen Königin der
+Nacht hat bis heute nichts von ihrer Faszination verloren.
+
+Für das diesjährige Familienkonzert am Nikolaustag bringt „Klassik bewegt“ die
+Oper in einer familienfreundlichen Kurzfassung auf die Bühne: Eingebunden in
+kurzweiliges Theaterspiel sind all die herrlichen Arien und Duette, die den
+unvergleichlichen Zauber dieser Oper ausmachen.
+
+„Es geht uns vor allen darum, diese wunderschöne Musik auf die Bühne zu bringen,
+„nicht nur konzertant, sondern theatralisch und unterhaltsam inszeniert“,
+„erklärt dazu Florian Metz, der zusammen mit André Schann das Konzept zu dieser
+„Opernfassung entwickelte.
+
+Gemeinsam mit einem 14-köpfigen Ensemble bestehend aus Sängerkollegen vom Basler
+Theater,  einheimischen Akteuren, sowie dem Kammermusikensemble Bohème bringen
+sie die Oper auf die Bühne."></div>
+    <div property="v:startDate" content="2015-12-06T11:00+02:00"></div>
+
+    <span rel="v:location">
+      <span typeof="v:Organization">
+        <span property="v:name" content="Wohnpark Binzen"></span>
+        <span rel="v:address">
+          <span typeof="v:Address">
+            <span property="v:street-address" content="Konrad-Zuse-Straße 6"></span>
+            <span property="v:locality" content="Binzen"></span>
+          </span>
+        </span>
+
+        <span rel="v:geo">
+          <span typeof="v:Geo">
+            <span property="v:latitude" content="47.6239116" ></span>
+            <span property="v:longitude" content="7.6096063" ></span>
+          </span>
+        </span>
+      </span>   
+    </span>
+    <!-- end of search machine meta data -->
+    <!-- visible data here -->
+
+    <div class="cover" id="2015-10-zauberfloete">
+      <div class="hint"><a class="content" href="http://klassikbewegt.jimdo.com">Jetzt Tickets bestellen</a></div>
+      <% link_to 'assets/2015-10-Flyer_Zauberflöte_A5.pdf', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
+        <%= image_tag 'cover/small/2015-10-Zauberfloete.jpeg'  %>
+      <% end %> 
+    </div>
+
+    <div class="title">
+      <div class="highlight">&gt; AKTUELL</div>
+      <div class="date">6. Dezember 2015</div>
+      <div class="time">11h</div>
+      <h2 class="label">Familienkonzert - Die Zauberflöte</h2>
+      <div class="place">Wohnpark Binzen<br />Konrad-Zuse-Straße 6</div>
+    </div>
+  </article>
+
 
   <article class="art" prefix:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
     <!-- search machine meta data -->
@@ -47,23 +108,18 @@ Die drei Pianisten werden Auszüge aus den Märchen lesen und die Stücke erläu
     <!-- visible data here -->
 
     <div class="cover" id="2015-06-maerchenhaft">
-      <div class="hint"><a class="content" href="http://klassikbewegt.jimdo.com">Jetzt Tickets bestellen</a></div>
       <% link_to 'assets/2015-05-_Maerchen_Flyer_A5.pdf', :alt => 'Programm cover', :title => 'Programm herunterladen' do %>
         <%= image_tag 'cover/small/2015-05-Maerchenhaft-und-bewegt.jpeg'  %>
       <% end %> 
     </div>
 
     <div class="title">
-      <div class="highlight">&gt; AKTUELL</div>
       <div class="date">21. Juni 2015</div>
       <div class="time">16h</div>
       <h2 class="label">Märchenhaft und beschwingt</h2>
       <div class="place">ASAG Binzen, Meitner Ring 3</div>
     </div>
   </article>
-
-
-
 
   <article class="art" prefix:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
     <!-- search machine meta data -->
