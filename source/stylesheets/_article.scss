@@ -43,7 +43,9 @@
       font-weight: bold;
       border: 1px solid $beli-lila-dark;
       font-size: 1.25em;
+      line-height: 2.2em;
     }
+
     @include transform(scale(1.0) rotate(-15deg) translate(-1.5em,1em));
     @include transition(transform 0.3s);
     &:hover {
