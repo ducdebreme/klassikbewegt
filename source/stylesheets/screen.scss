@@ -1,21 +1,18 @@
-
-
 @import "compass/reset";
 @import "compass/css3/images";
 @import "compass/typography/links/link-colors";
-
 
 @import "variables";
 @import "type";
 @import "article";
 @import "page_layout";
 
-
 .logo {
   overflow: hidden;
   display: block;
   width: 50%;
 }
+
 #logo {
   width: 100%;
 }
@@ -38,6 +35,7 @@
 
 a {
   @include link-colors($beli-lila-dark, $beli-lila-light, $beli-lila-dark, $beli-lila-dark, $beli-lila-light);
+
   text-decoration: none;
 }
 
@@ -49,4 +47,3 @@ a {
     clear: both;
   }
 }
-

@@ -1,48 +1,50 @@
 /* Typographic here */
 
-// typography : vertical rhythm 
+// typography : vertical rhythm
 @import "compass/typography";
-
-
 
 @include establish-baseline;
 
 body {
   //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-family: $sans-font-family;
+
   @include adjust-font-size-to($base-font-size);
 
   color: $text-color;
-
 }
 
 // sizes @see http://lamb.cc/typograph/
-h1 { 
-  @include adjust-font-size-to(2.0 * $base-font-size);
+h1 {
+  @include adjust-font-size-to(2 * $base-font-size);
 }
-h2 { 
-  @include adjust-font-size-to(1.75 * $base-font-size); 
+
+h2 {
+  @include adjust-font-size-to(1.75 * $base-font-size);
 }
-h3 { 
-  @include adjust-font-size-to(1.5 * $base-font-size); 
+
+h3 {
+  @include adjust-font-size-to(1.5 * $base-font-size);
 }
-h4 { 
-  @include adjust-font-size-to(1.33 * $base-font-size); 
+
+h4 {
+  @include adjust-font-size-to(1.33 * $base-font-size);
 }
-h5 { 
-  @include adjust-font-size-to(1.1667 * $base-font-size); 
+
+h5 {
+  @include adjust-font-size-to(1.1667 * $base-font-size);
 }
 
 //add extra space before headlines
 .padding-top {
-  @include padding-leader(0.5);  
+  @include padding-leader(0.5);
 }
 
 .title {
   @extend .padding-top;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
   font-weight: 700;
   font-family: $sans-font-family;
 }
@@ -52,7 +54,7 @@ p {
 }
 
 small, .small {
-  @include adjust-font-size-to(0.75 * $base-font-size); 
+  @include adjust-font-size-to(0.75 * $base-font-size);
 }
 
 em {

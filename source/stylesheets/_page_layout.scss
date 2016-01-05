@@ -1,22 +1,23 @@
-
 // ===== create the pages background =====
 body {
   // @include background( linear-gradient(top, #A3BEDB 0%, #e0e0e0 100%));
-  @include background( linear-gradient(top, saturate($page-body-background,10%) 0%, lighten($page-body-background, 20%) 100%));
+  @include background(linear-gradient(top, saturate($page-body-background, 10%) 0%, lighten($page-body-background, 20%) 100%));
+
   background-repeat: no-repeat;
   min-height: 100%;
   max-width: 1100px;
 
   // scale the grey background margins
   margin: 1em 1.5em $page-margin-bottom;
+
   @media (min-width: 960px) {
     margin: 1em 2em $page-margin-bottom;
   }
+
   @media (min-width: 1100px) {
     margin: 1em auto $page-margin-bottom;
   }
 }
-
 
 /* positioning of logo */
 .page-header {
@@ -28,12 +29,14 @@ body {
 // this creates white space between the gradient border and the gray background
 .page-outer {
   border: 2em solid white;
+
   @include box-shadow(#999 0px 0px 1em);
 }
 
 // border with gradient: @see http://stackoverflow.com/questions/2717127/css3-gradient-borders
 .page {
-  @include background( linear-gradient(left, #fff 0%, #fff 50%, $page-border-color 100%));
+  @include background(linear-gradient(left, #fff 0%, #fff 50%, $page-border-color 100%));
+
   padding: 2px;
 }
 
