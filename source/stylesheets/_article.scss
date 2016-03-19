@@ -83,12 +83,12 @@
     // hover effect
     opacity: 1.0;
 
-    @include single-box-shadow(#888, 0.5em, 0.5em);
+    @include single-box-shadow(0.5em, 0.5em, 0.5em, 0.5em, #888);
 
     &:hover {
       opacity: 0.9;
 
-      @include single-box-shadow(#aaa, 0.5em, 0.5em);
+      @include single-box-shadow(0.5em, 0.5em, 0.5em, 0.5em, #aaa);
 
       @include transition(all 0.2s 0 ease);
     }
